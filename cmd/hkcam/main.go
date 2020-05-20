@@ -24,7 +24,7 @@ func main() {
 
 	if runtime.GOOS == "linux" {
 		inputDevice = flag.String("input_device", "v4l2", "video input device")
-		inputFilename = flag.String("input_filename", "/dev/video0", "video input device filename")
+		inputFilename = flag.String("input_filename", "/dev/video1", "video input device filename")
 		loopbackFilename = flag.String("loopback_filename", "/dev/video1", "video loopback device filename")
 		h264Decoder = flag.String("h264_decoder", "", "h264 video decoder")
 		h264Encoder = flag.String("h264_encoder", "h264_omx", "h264 video encoder")
